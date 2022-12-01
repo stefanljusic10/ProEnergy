@@ -1,8 +1,8 @@
 import data from '../data.json' assert { type: "json" }
-import toggleNavbarDropdown from './navbar/toggleDropdown.js';
-import toggleNavigationDropdown from './navigation/toggleDropdown.js'
-import toggleSourceContent from './sources/toggleContent.js'
-import checkInputs from './form/checkInputs.js'
+import toggleNavbarDropdown from '../dist/navbar/toggleDropdown.min.js';
+import toggleNavigationDropdown from '../dist/navigation/toggleDropdown.min.js'
+import toggleSourceContent from '../dist/sources/toggleContent.min.js'
+import checkInputs from '../dist/form/checkInputs.min.js'
 
 
 // navbar dropdown

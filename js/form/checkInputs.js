@@ -1,4 +1,4 @@
-import { setErrors, clearErrors, validateInput, validateEmail } from './utils.js'
+import { setErrors, clearErrors, validateInput, validateEmail } from './utils.min.js'
 
 const firstName = document.getElementById('firstName')
 const lastName = document.getElementById('lastName')
