@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <title>ProEnergy</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__link" href="#">
+        <img class="header__logo" src="./assets/logo.svg" />
+      </a>
+      <nav class="header__navbar">
+        <li class="header__navitem">
+          <a href="#" class="header__link"> Our Group </a>
+        </li>
+        <li class="header__navitem">
+          <a href="#" class="header__link dropdown">
+            Our Divisions
+            <svg
+              width="10"
+              height="7"
+              viewBox="0 0 10 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.82812 0.148438L10 1.32031L5 6.32031L0 1.32031L1.17188 0.148438L5 3.97656L8.82812 0.148438Z"
+                fill="#E66559"
+              />
+            </svg>
+          </a>
+          <div class="dropdown__divisions showDropdown">
+            <ul class="dropdown__divisions-list">
+              <a class="dropdown__divisions-link" href="#">
+                <li class="dropdown__divisions-listItem">
+                  Our Operations Structure
+                </li>
+              </a>
+              <a class="dropdown__divisions-link" href="#">
+                <li class="dropdown__divisions-listItem">Water Division</li>
+              </a>
+              <a class="dropdown__divisions-link" href="#">
+                <li class="dropdown__divisions-listItem">Transport Division</li>
+              </a>
+              <a class="dropdown__divisions-link" href="#">
+                <li class="dropdown__divisions-listItem">Telecom Division</li>
+              </a>
+              <a class="dropdown__divisions-link" href="#">
+                <li class="dropdown__divisions-listItem">Energy Division</li>
+              </a>
+              <a class="dropdown__divisions-link" href="#">
+                <li class="dropdown__divisions-listItem">
+                  Plant & Fleet Solutions
+                </li>
+              </a>
+            </ul>
+          </div>
+        </li>
+        <li class="header__navitem">
+          <a href="#" class="header__link"> Our People </a>
+        </li>
+        <li class="header__navitem">
+          <a href="#" class="header__link dropdown">
+            Investors
+            <svg
+              width="10"
+              height="7"
+              viewBox="0 0 10 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.82812 0.148438L10 1.32031L5 6.32031L0 1.32031L1.17188 0.148438L5 3.97656L8.82812 0.148438Z"
+                fill="#E66559"
+              />
+            </svg>
+          </a>
+          <div class="dropdown__investors showDropdown">
+            <ul class="dropdown__investors-list">
+              <a class="dropdown__investors-link" href="#">
+                <li class="dropdown__investors-listItem">
+                  Our Investment Strategy
+                </li>
+              </a>
+              <a class="dropdown__investors-link" href="#">
+                <li class="dropdown__investors-listItem">IR Contracts</li>
+              </a>
+              <a class="dropdown__investors-link" href="#">
+                <li class="dropdown__investors-listItem">Tax Strategy</li>
+              </a>
+              <a class="dropdown__investors-link" href="#">
+                <li class="dropdown__investors-listItem">Sector Analysis</li>
+              </a>
+              <a class="dropdown__investors-link" href="#">
+                <li class="dropdown__investors-listItem">Annual Reports</li>
+              </a>
+            </ul>
+          </div>
+        </li>
+        <li class="header__navitem">
+          <a href="#" class="header__link"> Our News </a>
+        </li>
+        <li class="header__navitem">
+          <a href="#" class="header__link"> Contact Us </a>
+        </li>
+      </nav>
+      <div class="navigation">
+        <input
+          type="checkbox"
+          class="navigation__checkbox-open"
+          id="navigation-toggle"
+        />
+        <label for="navigation-toggle" class="navigation__button">
+          <svg
+            width="30"
+            height="20"
+            viewBox="0 0 30 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0H30V3.35938H0V0ZM0 11.6406V8.35938H30V11.6406H0ZM0 20V16.6406H30V20H0Z"
+              fill="#575756"
+            />
+          </svg>
+        </label>
+        <div class="navigation__nav">
+          <div class="navigation__header">
+            <a class="navigation__link" href="#">
+              <img class="navigation__logo" src="./assets/logo.svg" />
+            </a>
+            <input
+              type="checkbox"
+              class="navigation__checkbox-close"
+              id="navigation-toggle"
+            />
+            <label for="navigation-toggle" class="navigation__button">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.6406 2.70312L14.3438 12L23.6406 21.2969L21.2969 23.6406L12 14.3438L2.70312 23.6406L0.359375 21.2969L9.65625 12L0.359375 2.70312L2.70312 0.359375L12 9.65625L21.2969 0.359375L23.6406 2.70312Z"
+                  fill="#575756"
+                />
+              </svg>
+            </label>
+          </div>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"> Our Group </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link navigationDropdown">
+                Our Divisions
+                <img
+                  class="navigation__link-arrow"
+                  src="./assets/nav-arrow-tab.svg"
+                  alt=""
+                />
+              </a>
+              <ul class="navigation__subList">
+                <li class="navigation__subItem">
+                  <a href="#" class="navigation__subLink"
+                    >Our Operations Structure</a
+                  >
+                </li>
+                <li class="navigation__subItem">
+                  <a href="#" class="navigation__subLink">Water Division</a>
+                </li>
+                <li class="navigation__subItem">
+                  <a href="#" class="navigation__subLink">Transport Division</a>
+                </li>
+                <li class="navigation__subItem">
+                  <a href="#" class="navigation__subLink">Telecom Division</a>
+                </li>
+                <li class="navigation__subItem">
+                  <a href="#" class="navigation__subLink">Energy Division</a>
+                </li>
+                <li class="navigation__subItem">
+                  <a href="#" class="navigation__subLink"
+                    >Plant & Fleet Solutions</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"> Our People </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link navigationDropdown">
+                Investors
+                <img
+                  class="navigation__link-arrow"
+                  src="./assets/nav-arrow-tab.svg"
+                  alt=""
+                />
+              </a>
+              <ul class="navigation__subList">
+                <li class="navigation__subItem">
+                  <a href="#" class="navigation__subLink"
+                    >Our Operations Structure</a
+                  >
+                </li>
+                <li class="navigation__subItem">
+                  <a href="#" class="navigation__subLink">Water Division</a>
+                </li>
+                <li class="navigation__subItem">
+                  <a href="#" class="navigation__subLink">Transport Division</a>
+                </li>
+                <li class="navigation__subItem">
+                  <a href="#" class="navigation__subLink">Telecom Division</a>
+                </li>
+                <li class="navigation__subItem">
+                  <a href="#" class="navigation__subLink">Energy Division</a>
+                </li>
+                <li class="navigation__subItem">
+                  <a href="#" class="navigation__subLink"
+                    >Plant & Fleet Solutions</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"> Our News </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"> Contact Us </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="delivery">
+      <div class="delivery__backgroundImg"></div>
+      <div class="delivery__description">
+        <span class="blueLine margin-small"></span>
+        <h1 class="delivery-heading margin-small">
+          Delivering essential infrastructure services
+        </h1>
+        <p class="delivery-text margin-small">
+          We deliver a range of essential infrastructure services within water,
+          energy, transport and telecommunication in the Europe.
+        </p>
+        <button class="btn btnRed">
+          Find out more
+          <svg
+            class="btnArrow"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="btnRed-icon"
+              d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="job">
+      <div class="job__description">
+        <div class="whiteLine margin-small"></div>
+        <h2 class="heading-medium-white margin-small">What we do</h2>
+        <p class="job-text">
+          Donec lobortis at orci eu iaculis. Sed nisl nunc, aliquam lacinia
+          luctus id, scelerisque.
+        </p>
+        <p class="job-text margin-small">
+          Aliquam auctor bibendum erat, in sagittis dui iaculis in.
+        </p>
+        <button class="btn btnRed">
+          Discover our divisions
+          <svg
+            class="btnArrow"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="btnRed-icon"
+              d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="job__cover">
+        <img class="job__image" src="./assets/hero2.png" />
+        <div class="job__grid">
+          <div class="job__item">
+            <div class="redVerticalLine"></div>
+            <div class="job__item-text">
+              <p class="job__item-text--heading">ProEnergy</p>
+              <p class="job__item-text--desc">Energy Division</p>
+            </div>
+          </div>
+          <div class="job__item">
+            <div class="blackVerticalLine"></div>
+            <div class="job__item-text">
+              <p class="job__item-text--heading">ProEnergy</p>
+              <p class="job__item-text--desc">Plant & Fleet Solutions</p>
+            </div>
+          </div>
+          <div class="job__item">
+            <div class="blueVerticalLine"></div>
+            <div class="job__item-text">
+              <p class="job__item-text--heading">ProEnergy</p>
+              <p class="job__item-text--desc">Water Division</p>
+            </div>
+          </div>
+          <div class="job__item">
+            <div class="greenVerticalLine"></div>
+            <div class="job__item-text">
+              <p class="job__item-text--heading">ProEnergy</p>
+              <p class="job__item-text--desc">Transport Division</p>
+            </div>
+          </div>
+          <div class="job__item">
+            <div class="greyVerticalLine"></div>
+            <div class="job__item-text">
+              <p class="job__item-text--heading">ProEnergy</p>
+              <p class="job__item-text--desc">Telecom Division</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="stats padding-box">
+      <div class="greyLine margin-small"></div>
+      <h2 class="heading-medium-black">ESG Stats</h2>
+      <div class="stats__box">
+        <div class="stats__content">
+          <div class="stats__content-subheading">Used</div>
+          <div class="stats__content-number">
+            83<span class="stats__content-number--percentage">%</span>
+          </div>
+          <div class="stats__content-desc">
+            <span class="stats__content-desc--breakline">renewable</span>
+            <span>energy</span>
+          </div>
+        </div>
+        <div class="stats__content">
+          <div class="stats__content-subheading">Recovered</div>
+          <div class="stats__content-number">
+            77<span class="stats__content-number--percentage">%</span>
+          </div>
+          <div class="stats__content-desc">
+            <span class="stats__content-desc--breakline">of waste to</span>
+            <span>avoid landfill</span>
+          </div>
+        </div>
+        <div class="stats__content">
+          <div class="stats__content-subheading">Recovered over</div>
+          <div class="stats__content-number">15,000</div>
+          <div class="stats__content-desc">
+            <span class="stats__content-desc--breakline">electrical</span>
+            <span>vehicle miles</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats__text margin-small">
+        Donec lobortis at orci eu iaculis. Sed nisl nunc, aliquam lacinia luctus
+        id, scelerisque.
+      </div>
+      <button class="btn btnRed" class="btnRed">
+        Find out more
+        <svg
+          class="btnArrow"
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="btnRed-icon"
+            d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"
+            fill="white"
+          />
+        </svg>
+      </button>
+    </section>
+    <section class="comments padding-box">
+      <div class="views">
+        <div class="lightGreyLine margin-small"></div>
+        <h2 class="heading-medium-white margin-small">What our people say</h2>
+        <p class="views__text margin-small">
+          As a Group we recognise that engaging and empowering our people to
+          deliver and grow is pivotal to driving our business and achieving
+          continued success.
+        </p>
+        <button class="btn btnWhite">
+          Hear our people's view
+          <svg
+            class="btnArrow"
+            width="18"
+            height="17"
+            viewBox="0 0 18 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="btnWhite-icon"
+              d="M9 0.831787L17.0156 8.84741L9 16.863L7.59375 15.4568L13.1719 9.83179H0.984375V7.86304H13.1719L7.59375 2.23804L9 0.831787Z"
+              fill="#E73137"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="quotes">
+        <div class="quotes__box">
+          <div class="quotes__mark margin-min">
+            <svg
+              class="quotes__mark-sign"
+              width="38"
+              height="50"
+              viewBox="0 0 38 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 30.8421C0 41.281 8.62722 49.3474 18.6923 49.3474C28.7574 49.3474 37.3846 40.8065 37.3846 30.8421C37.3846 21.3522 30.6746 13.7603 21.5681 12.3369V0C11.9823 5.21944 0.47929 15.6583 0 29.8931C0 29.8931 0 30.3676 0 30.8421Z"
+                fill="#59A6C0"
+              />
+            </svg>
+            <svg
+              class="quotes__mark-sign"
+              width="38"
+              height="50"
+              viewBox="0 0 38 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 30.8421C0 41.281 8.62722 49.3474 18.6923 49.3474C28.7574 49.3474 37.3846 40.8065 37.3846 30.8421C37.3846 21.3522 30.6746 13.7603 21.5681 12.3369V0C11.9823 5.21944 0.47929 15.6583 0 29.8931C0 29.8931 0 30.3676 0 30.8421Z"
+                fill="#59A6C0"
+              />
+            </svg>
+          </div>
+          <p class="quotes__text margin-min">
+            Sed dignissim placerat dolor id maxim. Nullam gravida bibendum
+            ipsum, a consequat neque venenatis et.
+          </p>
+          <div class="quotes__mark-second">
+            <svg
+              class="quotes__mark-sign"
+              width="39"
+              height="50"
+              viewBox="0 0 39 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M38.1361 18.8527C38.1361 8.41381 29.5088 0.347412 19.4437 0.347412C9.3786 0.347412 0.751354 8.88831 0.751354 18.8527C0.751354 28.3426 7.46143 35.9345 16.568 37.358L16.568 49.6948C26.6331 44.4754 38.1361 34.0365 38.6154 19.8017C38.1361 19.8017 38.1361 19.3272 38.1361 18.8527Z"
+                fill="#59A6C0"
+              />
+            </svg>
+            <svg
+              class="quotes__mark-sign"
+              width="39"
+              height="50"
+              viewBox="0 0 39 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M38.1361 18.8527C38.1361 8.41381 29.5088 0.347412 19.4437 0.347412C9.3786 0.347412 0.751354 8.88831 0.751354 18.8527C0.751354 28.3426 7.46143 35.9345 16.568 37.358L16.568 49.6948C26.6331 44.4754 38.1361 34.0365 38.6154 19.8017C38.1361 19.8017 38.1361 19.3272 38.1361 18.8527Z"
+                fill="#59A6C0"
+              />
+            </svg>
+          </div>
+          <div class="quotes__author">
+            <img
+              class="quotes__author-image"
+              src="./assets/slide1.png"
+              alt="author"
+            />
+            <pre class="quotes__author-name">
+                        <span class="quotes__author-name--bold">Orci varius natoque</span>
+                        <span class="quotes__author-name--light">Magnis dis parturient montes</span>
+                    </pre>
+          </div>
+        </div>
+        <div class="quotes__slider">
+          <img
+            class="quotes__slider-sign arrow disableSlider"
+            src="./assets/greenArrowBack.svg"
+          />
+          <img
+            class="quotes__slider-sign dot"
+            src="./assets/redDotActive.svg"
+          />
+          <img
+            class="quotes__slider-sign dot disableDot"
+            src="./assets/redDotActive.svg"
+          />
+          <img
+            class="quotes__slider-sign dot disableDot"
+            src="./assets/redDotActive.svg"
+          />
+          <img
+            class="quotes__slider-sign arrow"
+            src="./assets/greenArrowForward.svg"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="sources padding-box">
+      <div class="greyLine margin-small"></div>
+      <h2 class="heading-medium-black">Core capabilities</h2>
+      <div class="core">
+        <div class="core__toggle">
+          <p class="core__toggle-name">Water</p>
+          <img class="core__toggle-sign minus" src="./assets/minus.svg" />
+        </div>
+        <div class="core__content active">
+          <p class="core__text">
+            Working collaboratively with clients to achieve shared business
+            goals and objectives, such as end-user satisfaction, Morrison
+            Utility Services bring commitment, innovation, teamwork and
+            accountability to deliver long-term partnerships.
+          </p>
+          <p class="core__text">
+            Proin dapibus dignissim erat et fermentum. Duis odio eros, lobortis
+            id suscipit eget, efficitur ut dolor. Phasellus convallis semper
+            lacus, sit amet molestie libero. Duis tempus bibendum nisi,
+            vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Phasellus convallis semper lacus, sit
+            amet molestie libero. Duis tempus bibendum nisi, vulputate semper
+            erat malesuada sed. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+          </p>
+        </div>
+        <div class="core__toggle">
+          <p class="core__toggle-name">Gas</p>
+          <img class="core__toggle-sign plus" src="./assets/plus.svg" />
+        </div>
+        <div class="core__content">
+          <p class="core__text">
+            Proin dapibus dignissim erat et fermentum. Duis odio eros, lobortis
+            id suscipit eget, efficitur ut dolor. Phasellus convallis semper
+            lacus, sit amet molestie libero. Duis tempus bibendum nisi,
+            vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Phasellus convallis semper lacus, sit
+            amet molestie libero. Duis tempus bibendum nisi, vulputate semper
+            erat malesuada sed. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+          </p>
+          <p class="core__text">
+            Working collaboratively with clients to achieve shared business
+            goals and objectives, such as end-user satisfaction.
+          </p>
+        </div>
+        <div class="core__toggle">
+          <p class="core__toggle-name">Electricity</p>
+          <img class="core__toggle-sign plus" src="./assets/plus.svg" />
+        </div>
+        <div class="core__content">
+          <p class="core__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad
+            qui nemo sed distinctio enim quasi libero nisi harum praesentium
+            provident reprehenderit rem iusto, adipisci hic nam blanditiis
+            mollitia repellat?
+          </p>
+          <p class="core__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+            culpa sapiente debitis ducimus explicabo accusantium doloremque ea,
+            quas, placeat id ipsa mollitia minima adipisci omnis architecto non
+            officiis necessitatibus consequuntur voluptatibus commodi. Quidem
+            facere natus, rem odio rerum vero minus. Molestias qui vitae earum
+            magni corrupti eos possimus excepturi quo?
+          </p>
+        </div>
+        <div class="core__toggle">
+          <p class="core__toggle-name">Smart Metering</p>
+          <img class="core__toggle-sign plus" src="./assets/plus.svg" />
+        </div>
+        <div class="core__content">
+          <p class="core__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            explicabo blanditiis ipsum laboriosam voluptates illum quo nemo,
+            veritatis expedita eaque hic perferendis sequi amet quas iste sed
+            ipsa aliquid quis debitis quaerat fugiat. Earum porro debitis
+            consequuntur quibusdam fuga ratione accusantium totam iusto maxime
+            hic, labore itaque neque repellendus excepturi temporibus eveniet
+            animi ullam officiis assumenda. Eum repellat alias quibusdam.
+          </p>
+          <p class="core__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+            assumenda ad est maiores nobis magni delectus neque tempora veniam
+            consequuntur?
+          </p>
+        </div>
+        <div class="core__toggle">
+          <p class="core__toggle-name">Energy Projects</p>
+          <img class="core__toggle-sign plus" src="./assets/plus.svg" />
+        </div>
+        <div class="core__content">
+          <p class="core__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+            omnis magnam sequi esse alias nobis praesentium amet nihil sapiente
+            perspiciatis saepe corrupti hic voluptatem, nostrum ullam soluta
+            perferendis qui veritatis? Necessitatibus blanditiis voluptatum
+            cupiditate, temporibus reiciendis error est id fuga?
+          </p>
+          <p class="core__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            provident. Molestiae consequatur nihil quis officia, maxime autem
+            illo veritatis vel.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="contact padding-box">
+      <div class="blueLine margin-small"></div>
+      <h2 class="heading-medium-black">Contact us</h2>
+      <form class="contact__form">
+        <div class="contact__field">
+          <label class="contact__field-label" for="firstName"
+            >Your first name*</label
+          >
+          <input
+            class="contact__input inputField"
+            id="firstName"
+            name="firstName"
+            type="text"
+            placeholder="Enter your first name..."
+          />
+        </div>
+        <div class="contact__field">
+          <label class="contact__field-label" for="lastName"
+            >Your last name*</label
+          >
+          <input
+            class="contact__input inputField"
+            id="lastName"
+            name="lastName"
+            type="text"
+            placeholder="Enter your last name..."
+          />
+        </div>
+        <div class="contact__field">
+          <label class="contact__field-label" for="email"
+            >Your email address*</label
+          >
+          <input
+            class="contact__input inputField"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email address..."
+          />
+        </div>
+        <div class="contact__field">
+          <label class="contact__field-label" for="subject">Your subject*</label>
+          <input
+            class="contact__input inputField"
+            id="subject"
+            name="subject"
+            type="text"
+            placeholder="Enter your Subject..."
+          />
+        </div>
+        <div class="contact__field-message">
+          <label class="contact__field-label" for="message">Your message*</label>
+          <textarea
+            class="contact__input inputField"
+            id="message"
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Enter your message..."
+          ></textarea>
+        </div>
+        <div class="contact__submit">
+          <p class="contact__submit-required">*Required fields</p>
+          <button class="btn btnRed">
+            Submit
+            <svg
+              class="btnArrow"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="btnRed-icon"
+                d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer__linkBox">
+        <a class="footer__logoLink" href="#">
+          <img class="links__logoIcon" src="./assets/logo.svg" />
+        </a>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <svg
+                width="19"
+                height="16"
+                viewBox="0 0 19 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.457 4.68213C16.457 4.854 16.457 5.01156 16.457 5.15479C16.457 6.44385 16.2135 7.71859 15.7266 8.979C15.2682 10.2108 14.5951 11.3423 13.707 12.3735C12.8477 13.4048 11.7161 14.2498 10.3125 14.9087C8.9375 15.5389 7.41927 15.854 5.75781 15.854C3.66667 15.854 1.7474 15.2954 0 14.1782C0.286458 14.2069 0.58724 14.2212 0.902344 14.2212C2.64974 14.2212 4.21094 13.6912 5.58594 12.6313C4.75521 12.6027 4.01042 12.3449 3.35156 11.8579C2.72135 11.3709 2.29167 10.755 2.0625 10.0103C2.29167 10.0675 2.52083 10.0962 2.75 10.0962C3.09375 10.0962 3.42318 10.0389 3.73828 9.92432C2.87891 9.75244 2.16276 9.32275 1.58984 8.63525C1.01693 7.94775 0.730469 7.15999 0.730469 6.27197C0.730469 6.24333 0.730469 6.229 0.730469 6.229C1.27474 6.51546 1.84766 6.67301 2.44922 6.70166C1.33203 5.92822 0.773438 4.88265 0.773438 3.56494C0.773438 2.87744 0.945312 2.24723 1.28906 1.67432C2.23438 2.82015 3.36589 3.73682 4.68359 4.42432C6.02995 5.11182 7.47656 5.49854 9.02344 5.58447C8.96615 5.29801 8.9375 5.01156 8.9375 4.7251C8.9375 3.69385 9.29557 2.82015 10.0117 2.104C10.7565 1.35921 11.6445 0.986816 12.6758 0.986816C13.7643 0.986816 14.681 1.37354 15.4258 2.14697C16.2852 1.9751 17.0872 1.67432 17.832 1.24463C17.5456 2.13265 16.987 2.82015 16.1562 3.30713C16.9297 3.22119 17.6602 3.03499 18.3477 2.74854C17.832 3.49333 17.2018 4.13786 16.457 4.68213Z"
+                  fill="#59A6C0"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.7031 11.0532C14.7031 10.423 14.5885 9.96468 14.3594 9.67822C14.1302 9.36312 13.7005 9.20557 13.0703 9.20557C12.2969 9.20557 11.7526 9.43473 11.4375 9.89307C11.1224 10.3514 10.9648 10.9959 10.9648 11.8267V18.1001C10.9648 18.2433 10.9219 18.3579 10.8359 18.4438C10.75 18.5298 10.6354 18.5728 10.4922 18.5728H7.22656C7.11198 18.5728 6.9974 18.5298 6.88281 18.4438C6.79688 18.3579 6.75391 18.2433 6.75391 18.1001V6.49854C6.75391 6.38395 6.79688 6.28369 6.88281 6.19775C6.9974 6.08317 7.11198 6.02588 7.22656 6.02588H10.4062C10.5208 6.02588 10.6068 6.05452 10.6641 6.11182C10.75 6.16911 10.8073 6.25505 10.8359 6.36963C10.8359 6.48421 10.8359 6.55583 10.8359 6.58447C10.8646 6.64176 10.8789 6.74202 10.8789 6.88525C11.681 6.11182 12.7695 5.7251 14.1445 5.7251C15.6628 5.7251 16.8516 6.11182 17.7109 6.88525C18.5703 7.65869 19 8.7902 19 10.2798V18.1001C19 18.2433 18.9427 18.3579 18.8281 18.4438C18.7422 18.5298 18.6419 18.5728 18.5273 18.5728H15.1758C15.0612 18.5728 14.9466 18.5298 14.832 18.4438C14.7461 18.3579 14.7031 18.2433 14.7031 18.1001V11.0532ZM5.07812 2.50244C5.07812 3.104 4.86328 3.63395 4.43359 4.09229C4.00391 4.52197 3.47396 4.73682 2.84375 4.73682C2.24219 4.73682 1.72656 4.52197 1.29688 4.09229C0.867188 3.63395 0.652344 3.104 0.652344 2.50244C0.652344 1.87223 0.867188 1.34229 1.29688 0.912598C1.72656 0.48291 2.24219 0.268066 2.84375 0.268066C3.47396 0.268066 4.00391 0.48291 4.43359 0.912598C4.86328 1.34229 5.07812 1.87223 5.07812 2.50244ZM4.99219 6.49854V18.1001C4.99219 18.2433 4.9349 18.3579 4.82031 18.4438C4.73438 18.5298 4.63411 18.5728 4.51953 18.5728H1.25391C1.11068 18.5728 0.996094 18.5298 0.910156 18.4438C0.824219 18.3579 0.78125 18.2433 0.78125 18.1001V6.49854C0.78125 6.38395 0.824219 6.28369 0.910156 6.19775C0.996094 6.08317 1.11068 6.02588 1.25391 6.02588H4.51953C4.63411 6.02588 4.73438 6.08317 4.82031 6.19775C4.9349 6.28369 4.99219 6.38395 4.99219 6.49854Z"
+                  fill="#59A6C0"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <svg
+                width="10"
+                height="19"
+                viewBox="0 0 10 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.41797 18.5728H3.02344V10.2368H0.1875V6.97119H3.02344V4.56494C3.02344 3.18994 3.41016 2.13005 4.18359 1.38525C4.95703 0.640462 5.98828 0.268066 7.27734 0.268066C8.30859 0.268066 9.15365 0.311035 9.8125 0.396973V3.27588L8.05078 3.31885C7.42057 3.31885 6.99089 3.44775 6.76172 3.70557C6.53255 3.96338 6.41797 4.3501 6.41797 4.86572V6.97119H9.68359L9.25391 10.2368H6.41797V18.5728Z"
+                  fill="#59A6C0"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Cookies</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Sitemap</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Privacy policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <span class="copyright-breakline"
+          >2022 © ProEnergy. Registered in Serbia. Registered Office:</span
+        >
+        Novosadskog sajma 2, Novi Sad.
+      </div>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

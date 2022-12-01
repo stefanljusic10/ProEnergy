@@ -1,0 +1,46 @@
+.blueLine{
+    @include horizontalLine;
+    background-color: $color-blue;
+    display: inline-block;
+}
+
+.whiteLine{
+    @include horizontalLine;
+    background-color: $color-white;
+}
+
+.greyLine{
+    @include horizontalLine;
+    background-color: $color-dark-grey;
+    display: inline-block;
+}
+
+.lightGreyLine{
+    @include horizontalLine;
+    background-color: $color-grey;
+}
+
+.redVerticalLine{
+    @include verticalLine;
+    background-color: $color-brick;
+}
+
+.blueVerticalLine{
+    @include verticalLine;
+    background-color: $color-blue;
+}
+
+.greyVerticalLine{
+    @include verticalLine;
+    background-color: $color-grey;
+}
+
+.blackVerticalLine{
+    @include verticalLine;
+    background-color: $color-black;
+}
+
+.greenVerticalLine{
+    @include verticalLine;
+    background-color: $color-teal;
+}

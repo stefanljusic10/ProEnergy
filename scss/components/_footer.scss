@@ -1,0 +1,68 @@
+.footer{
+    &__linkBox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1.5rem 23rem;
+    
+        @include respond(bp-1200){
+            padding: 1.5rem 2rem;
+        }
+    
+        @include respond(bp-900){
+            flex-direction: column;
+
+            & > *:not(:last-child){
+                margin-bottom: 2rem;
+            }
+        }
+    
+        @include respond(bp-480){
+            padding: 2rem;
+        }
+    }
+    
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__item{
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $color-dark-grey;
+        font-size: 1.6rem;
+    }
+
+    &__copyright{
+        padding: 1.5rem 23rem;
+        font-size: 1.5rem;
+        text-align: center;
+        line-break: normal;
+        color: $color-white;
+        background-color: $color-brick;
+    
+        @include respond(bp-1200){
+            padding: 1.5rem 2rem;
+        }
+    
+        @include respond(bp-900){
+            font-size: 1.2rem;
+        }
+    
+        &-breakline::after{
+            @include respond(bp-550){
+               content: "\a";
+               white-space: pre;
+           }
+        }
+    }
+}

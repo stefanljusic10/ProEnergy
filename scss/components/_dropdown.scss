@@ -1,0 +1,13 @@
+.dropdown{
+    &__divisions{
+        display: none;
+        @include displayDropdown;
+        left: -3.7rem;
+    }
+
+    &__investors{
+        display: none;
+        @include displayDropdown;
+        left: -5rem;
+    }
+}

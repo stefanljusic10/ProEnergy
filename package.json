@@ -1,0 +1,16 @@
+{
+  "name": "front-zadatak",
+  "version": "1.0.0",
+  "description": "frontend task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:scss": "node-sass scss/main.scss dist/style.css",
+    "watch:scss": "npm run compile:scss && npm run compile:scss -- -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

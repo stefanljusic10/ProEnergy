@@ -1,0 +1,105 @@
+.navigation{
+    display: none;
+
+    @include respond(bp-1450){
+        display: block;
+    }
+
+    &__checkbox-open{
+        @include checkbox;
+    }
+
+    &__checkbox-close{
+        @include checkbox;
+    }
+
+    &__checkbox-open:checked ~ &__nav{
+        display: block;
+    }
+
+    &__checkbox-close:checked ~ &__nav{
+        display: none;
+    }
+
+    &__button{
+        display: flex;
+        user-select: none;
+        -webkit-user-select: none;
+        cursor: pointer;
+    }
+
+    &__nav{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $color-white;
+        z-index: 1000;
+    }
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem 2rem;
+        border-bottom: 1px solid $color-grey;
+
+        @include respond(bp-900){
+            padding: 2rem 2rem;
+        }
+        @include respond(bp-480){
+            padding: 1.6rem 2rem;
+        }
+    }
+
+    &__logo{
+        width: 25rem;
+        @include respond(bp-900){
+            width: 20rem;
+        }
+        @include respond(bp-480){
+            width: 16rem;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        padding: 0 2rem;
+        list-style: none;
+    }
+    
+    &__item {
+        padding: 1.9rem 0;
+        border-bottom: 2px solid $color-grey;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: $color-dark-grey;
+        font-size: 1.8rem;
+        font-weight: 700;
+        position: relative;
+    }
+
+    &__subList{
+        display: none;
+        list-style: none;
+    }
+    
+    &__subItem{
+        padding: 1rem 2rem;
+        &:first-child{
+            margin-top: 1rem;
+        }
+    }
+
+    &__subLink{
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: $color-dark-grey;
+    }
+}

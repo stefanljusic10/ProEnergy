@@ -1,0 +1,82 @@
+.stats{
+    width: 100%;
+    background-color: rgba($color-teal, .3);
+    text-align: center;
+    @include respond(bp-1200){
+        padding: 4rem 2rem;
+    }
+
+    &__box{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin: 8rem auto;
+        @include respond(bp-600){
+            display: block;
+            margin: 3rem auto;
+        }
+    }
+
+    &__content{
+        &-subheading{
+            font-size: 2rem;
+            @include respond(bp-900){
+                font-size: 1.8rem;
+            }
+
+            @include respond(bp-600){
+                margin-top: 3rem;
+            }
+        }
+        &-number{
+            font-size: 10rem;
+            @include respond(bp-900){
+                font-size: 7rem;
+            }
+            @include respond(bp-480){
+                font-size: 6rem;
+            }
+
+            &--percentage{
+                font-size: 6rem;
+                @include respond(bp-900){
+                    font-size: 4rem;
+                }
+            }
+
+        }
+
+        &-desc{
+            font-size: 2rem;
+            &--breakline::after{
+                content: "\a";
+                white-space: pre;
+
+                @include respond(bp-600){
+                    white-space: normal;
+                }
+            }
+            @include respond(bp-900){
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    &__text{
+        width: 44rem;
+        font-size: 1.8rem;
+        margin: 3rem auto;
+
+        @include respond(bp-900){
+            width: 100%;
+            font-size: 1.8rem;
+        }
+    }
+
+    &-btn{
+        width: 20.1rem;
+
+        @include respond(bp-480){
+            width: 100%;
+        }
+    }
+}

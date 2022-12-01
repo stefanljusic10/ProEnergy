@@ -1,0 +1,98 @@
+.job {
+  display: flex;
+
+  @include respond(bp-900) {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  &__description {
+    width: 50%;
+    padding: 20rem 4rem 20rem 23rem;
+    background-color: $color-blue;
+
+    @include respond(bp-900) {
+      width: 100%;
+      padding: 4rem 2rem;
+    }
+  }
+
+  &-text {
+    color: $color-white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    margin-bottom: 1.4rem;
+
+    @include respond(bp-480) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &-btn {
+    width: 26.3rem;
+    @include respond(bp-480) {
+      width: 100%;
+    }
+  }
+
+  &__cover {
+    width: 50%;
+    background-color: $color-light-grey;
+    
+    @include respond(bp-900) {
+      width: 100%;
+    }
+  }
+
+  &__image{
+    width: 100%;
+  }
+  
+  &__grid {
+    display: grid;
+    row-gap: 4rem;
+    grid-template-columns: repeat(2, auto);
+    width: 100%;
+    padding: 7rem 0 7rem 4rem;
+
+    @include respond(bp-900) {
+      row-gap: 3.1rem;
+      padding: 4rem 2rem;
+    }
+
+    @include respond(bp-480) {
+      display: block;
+    }
+  }
+
+  &__item {
+    display: flex;
+
+    @include respond(bp-480) {
+      &:not(:first-child) {
+        margin-top: 2rem;
+      }
+    }
+
+    &-text {
+      margin-left: 1rem;
+      font-size: 2.6rem;
+
+      @include respond(bp-480) {
+        font-size: 2rem;
+      }
+
+      &--heading {
+        color: $color-red;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+
+      &--desc {
+        color: $color-dark-grey;
+        font-weight: 500;
+      }
+    }
+  }
+}

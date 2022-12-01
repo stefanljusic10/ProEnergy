@@ -1,0 +1,16 @@
+.heading-medium-black{
+    @include headingMedium;
+    color: $color-black;
+
+    @include respond(bp-480){
+        font-size: 3rem;
+    }
+}
+.heading-medium-white{
+    @include headingMedium;
+    color: $color-white;
+
+    @include respond(bp-480){
+        font-size: 3rem;
+    }
+}

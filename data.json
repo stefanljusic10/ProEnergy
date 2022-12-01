@@ -1,0 +1,22 @@
+{
+    "slider": [
+        {
+            "quotes": "Sed dignissim placerat dolor id maxim. Nullam gravida bibendum ipsum, a consequat neque venenatis et.",
+            "image": "./assets/slide1.png",
+            "quoteAuthorOne": "Orci varius natoque",
+            "quoteAuthorTwo": "Magnis dis parturient montes"
+        },
+        {
+            "quotes": "Vivamus venenatis ipsum at risus placerat, sit amet dapibus diam aliquam posuere cubilia curae.",
+            "image": "./assets/slide2.png",
+            "quoteAuthorOne": "Proesent Tempus",
+            "quoteAuthorTwo": "Nunc faucibus eget"
+        },
+        {
+            "quotes": "Etiam mollis sit amet tellus ut accumsan. Donec sit amet lectus scelerisque, bibendum purus id, tristique felis.",
+            "image": "./assets/slide3.png",
+            "quoteAuthorOne": "Cros malesuada",
+            "quoteAuthorTwo": "Sed pulvinar ac lorem"
+        }
+    ]
+}

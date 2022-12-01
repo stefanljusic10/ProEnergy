@@ -1,0 +1,37 @@
+.btn {
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btnRed{
+    color: $color-white;
+    background-color: $color-red;
+
+    &:hover{
+        background-color: $color-dark-red;
+    }
+}
+
+.btnWhite{
+    color: $color-red;
+    background-color: $color-white;
+
+    &:hover{
+        color: $color-white;
+        background-color: $color-red;
+        border: none;
+    }
+
+    &:hover &-icon{
+        fill: $color-white;
+    }
+}
+
+.btnArrow{
+    transform: translateY(.35rem);
+}

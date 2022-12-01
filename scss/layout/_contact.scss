@@ -1,0 +1,63 @@
+.contact{
+    text-align: center;
+    background-color: $color-light-grey;
+
+    @include respond(bp-1200){
+        padding: 4rem 2rem;
+    }
+
+    &__form{
+        display: grid;
+        grid-template-columns: repeat(1fr, 50%);
+        column-gap: 4rem;
+        row-gap: 2rem;
+        margin-top: 3rem;
+    
+        @include respond(bp-600){
+            display: block;
+        }
+    }
+
+    &__field{
+        text-align: left;
+
+        @include respond(bp-600){
+            margin-top: 2rem;
+        }
+        &-label{
+            display: block;
+            text-align: left;
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: .5rem;
+        }
+
+        &-message{
+            grid-column: 1 / span 2;
+
+            @include respond(bp-600){
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    &__submit{
+        display: flex;
+        justify-content: space-between;
+        grid-column: 1 / span 2;
+
+        @include respond(bp-600){
+            margin-top: 2rem;
+        }
+
+        @include respond(bp-480){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &-required{
+            font-size: 1.6rem;
+            color: $color-dark-grey;
+        }
+    }
+}

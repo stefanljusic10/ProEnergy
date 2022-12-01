@@ -1,0 +1,19 @@
+.padding-box{ padding: 7rem 23rem; }
+.margin-min{ margin-bottom: 1.5rem; }
+.margin-small{ margin-bottom: 3rem; }
+.margin-medium{ margin-bottom: 8rem; }
+.active{ display: block !important; }
+.disable{ display: none !important; }
+.arrow{ cursor: pointer; }
+.disableSlider{
+    opacity: .5;
+    cursor: context-menu;
+}
+.disableDot{
+    opacity: .5;
+    transform: scale(.685);
+}
+.errorLabel{ color: $color-red !important; }
+.errorInput{
+    border: 1px solid $color-red !important;
+}

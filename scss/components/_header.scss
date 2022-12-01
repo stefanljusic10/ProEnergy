@@ -1,0 +1,70 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 23em;
+    background-color: $color-white;
+    border-bottom: 1px solid $color-grey;
+
+    @include respond(bp-1450){
+        .header__navbar{
+            display: none;
+        }
+        .menuIcon{
+            display: block;
+        }
+        padding: 0 2rem;
+    }
+
+    @include respond(bp-900){
+        padding: 2rem 2rem;
+    }
+
+    @include respond(bp-480){
+        padding: 1.6rem 2rem;
+        height: auto;
+    }
+
+    &__logo{
+        width: 25rem;
+        @include respond(bp-900){
+            width: 20rem;
+        }
+        @include respond(bp-480){
+            width: 16rem;
+        }
+    }
+
+    &__navbar{
+        list-style: none;
+
+        @include respond(bp-900){
+            display: none;
+        }
+    }
+    
+    &__link{
+        color: $color-dark-grey;
+        text-decoration: none;
+    }
+
+    &__navitem{
+        display: inline-block;
+        position: relative;
+        color: $color-dark-grey;
+        margin-right: 2em;
+        font-size: 1.6rem;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &:hover{
+            &-arrow{
+                transform: rotate(90deg);
+            }
+        }
+    }
+}

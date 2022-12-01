@@ -1,0 +1,11 @@
+.inputField{
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid $color-dark-grey;
+    padding: 1.5rem 2rem;
+    @include placeholder;
+
+    @include respond(bp-900){
+        padding: 1.5rem 1rem;
+    }
+}
