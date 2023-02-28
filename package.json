@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "compile:scss": "node-sass scss/main.scss dist/style.css",
-    "watch:scss": "npm run compile:scss && npm run compile:scss -- -w"
+    "dev": "webpack serve"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +17,7 @@
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
   }
 }
