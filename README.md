@@ -1,13 +1,15 @@
-# ProEnergy
-## Responsive web design
-### HTML, SCSS and vanilla Javascript, without libraries and third parties
+# 🚀 Welcome to your new awesome project!
 
-https://aesthetic-churros-fa472e.netlify.app/
+This project has been created using **webpack-cli**, you can now run
 
-### Features
-- Semantic markup
-- BEM methodology
-- Pixel-perfect
-- Built with performance in mind
-- Optimized for all browsers
-- JS functionalities built from scratch
+```
+npm run build
+```
+
+or
+
+```
+yarn build
+```
+
+to bundle your application
